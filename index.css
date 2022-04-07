@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-bg-color: brown;
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+  height: 100vh;
+  background: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+ 
+  background-color: var(--Pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+}
+.card{
+    border-radius: 25px;
+    height: auto;
+    text-align: center;
+    background: white;
+    max-width: 350px;
+    position: relative;
+   top: 50px;
+   
+}
+h1{
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.card-image img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+background: var(--Very-pale-blue);
+border-radius: 10px;
+padding: 10px 15px;
+}
+.col{
+    flex-direction: column;
+    margin-left: 20px;
+}
+.card-info{
+    padding: 30px 25px;
+   
+}
+.card-heading{
+    margin-bottom: 10px;
+}
+.card-para{
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+}
+.row-left{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: none;
+}
+.btn-primary{
+    background: var(--Bright-blue);
+    color: white;
+    font-weight: 700;
+    margin: 20px 0;
+    box-shadow: 0px 10px 15px 5px hsla(245, 75%, 52%, 0.17);
+    
+
+}
+.btn-primary:hover{
+    background: black;
+}
+.btn-secondary{
+    background: none;
+    font-weight: 700;
+
+
+}
+a:hover{
+    color:black ;
+}
+.plan-heading{
+    font-weight: 900;
+    color: var(--Dark-blue);
+    font-size: 14px;
+}
+.plan-price{
+    font-size: 14px;
+    color: var(--Desaturated-blue);
+   
+}
